@@ -4,3 +4,4 @@ ruby '2.1.6'
 
 gem 'grape'
 gem 'grape-swagger'
+gem 'thin'

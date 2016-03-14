@@ -14,9 +14,11 @@ GEM
     builder (3.2.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
+    daemons (1.2.3)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
+    eventmachine (1.0.9.1)
     grape (0.15.0)
       activesupport
       builder
@@ -45,6 +47,10 @@ GEM
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
+    thin (1.6.4)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (~> 1.0)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -60,6 +66,7 @@ PLATFORMS
 DEPENDENCIES
   grape
   grape-swagger
+  thin
 
 BUNDLED WITH
    1.11.2
